@@ -33,7 +33,7 @@ for item_raw in items_raw:
 
 @app.get("/")
 def root() -> Response:
-    return Response("The server is running!")
+    return Response("The server is running...")
 
 @app.get("/items/{item_number}")
 def get_item(item_number: str) -> Item:
